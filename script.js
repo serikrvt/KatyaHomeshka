@@ -147,6 +147,16 @@ const library = [
 library.sort((a, b) => a.author - b.author)
 console.log(library);
 
+// const newLibrary = {
+// author: ' ',
+// title: ' ',
+// year: ' ',
+// genre: ' ',
+// theme: ' ', 
+// rating: ' ',
+// }
+// newLibrary = Library.push(newLibrary)
+// console.log(library);
 
 
 const cities = [
@@ -398,8 +408,10 @@ const firstElement = library.find((item) => item.rating > 4.5 )
 
 // Найди в массиве library первый элемент в котором поля genre равное "Роман" и rating больше 4.6
 
-// Найти в cities первый элемент в котором поля continent равно "Европа"
+        // Найти в cities первый элемент в котором поля continent равно "Европа"
 
+const side =  cities.find((item) => item.continent === 'Европа')
+console.log(side);
 // Сформируй объект с полями author,title, year, genre, theme, rating и добавь его в массив library
 
     // Найди в массиве library первый элемент в котором поля rating меньше 4.5 и используя метод splice удали этот элмент
